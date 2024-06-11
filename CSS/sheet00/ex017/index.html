@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ejercicio 16</title>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas con igual ancho */
+  grid-template-rows: repeat(3, 1fr); /* Tres filas con igual alto */
+}
+
+.grid-container > div {
+  border: 1px solid #000; /* Borde para visualizar los elementos de la cuadrícula */
+  padding: 10px;
+  text-align: center;
+}
+.grid-item {
+            grid-column: span 2; /* Ocupar dos columnas */
+            grid-row: span 1; /* Ocupar una fila */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+    </div>
+</body>
+</html>
