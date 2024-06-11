@@ -7,6 +7,18 @@ ial-scale=1.0">
 <title>Ejercicio 16</title>
 <style>
 /* Aquí van tus estilos CSS */
+.grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.grid-container > div 
+{
+  border: 1px solid #000; /* Borde para visualizar los elementos de la cuadrícula */
+  padding: 10px;
+  text-align: center;
+}
 </style>
 </head>
 <body>
