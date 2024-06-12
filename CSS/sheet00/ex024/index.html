@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, init
+ial-scale=1.0">
+    <title>Ejercicio 24</title>
+    <style>
+        /* Aquí van tus estilos CSS */
+        .flex-container {
+            display: flex;
+            flex-direction: row; /* Dirección horizontal por defecto */
+            justify-content: space-around; /* Espacio entre los elementos */
+            border: 2px solid #000; /* Borde para visualizar el contenedor */
+            padding: 10px; /* Espacio interno del contenedor */
+        }
+
+        /* Estilos para los elementos flex */
+        .flex-container > div {
+            background-color: #a80707; /* Color de fondo */
+            padding: 20px; /* Espacio interno */
+            margin: 5px; /* Espacio externo */
+            border: 1px solid #531e98; /* Bordes */
+            text-align: center; /* Centrar el texto */
+        }
+
+        /* Media query para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column; /* Dirección vertical en pantallas pequeñas */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+</body>
+</html>
