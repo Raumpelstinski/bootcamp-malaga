@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, init
+ial-scale=1.0">
+    <title>Ejercicio 22</title>
+    <style>
+    .animate-box {
+    width: 100px; /* Ancho del cuadro */
+    height: 100px; /* Alto del cuadro */
+    background-color: #4CAF50; /* Color de fondo del cuadro */
+    position: relative; /* Necesario para la animación de posición */
+    animation: move-right 2s infinite alternate; /* Aplica la animación */
+}
+/* Definición de la animación */
+@keyframes move-right {
+    from {
+        left: 0; /* Posición inicial a la izquierda */
+    }
+    to {
+        left: 300px; /* Posición final a la derecha */
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="animate-box">Cuadro animado</div>
+</body>
+</html>
